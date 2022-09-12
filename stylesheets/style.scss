@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "digital 7 italic";
+  src: url(../fonts/digital-7-italic.ttf);
+}
+
+@import "variables";
+
+// BASE PAGE STYLES
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: transparent;
+  height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  body {
+    background: $black;
+    background: -o-linear-gradient(330deg, $black, change-color($black, $lightness: 18%)) fixed;
+    background: linear-gradient(120deg, $black, change-color($black, $lightness: 18%)) fixed;
+    color: change-color($black, $lightness: 100%);
+    min-height: 100%;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: none;
+    padding: 0 20px;
+    position: relative;
+    header {
+      padding-top: 50px;
+    }
+    main {
+      padding-bottom: 6rem;
+    }
+    footer {
+      bottom: 0;
+      font-size: 0.8rem;
+      left: 0;
+      letter-spacing: 2px;
+      padding: 14px 0;
+      position: absolute;
+      right: 0;
+      width: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-top: 0;
+    }
+    h1 {
+      color: $orange;
+      font-family: $heading-font;
+      font-size: 2.4rem;
+      letter-spacing: 4px;
+    }
+  }
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: $orange;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  -webkit-box-shadow: 0 0 3px 3px $red;
+  box-shadow: 0 0 3px 3px $red;
+  outline: none;
+}
+
+.page-not-found-message {
+  padding-top: 10%;
+  h1 {
+    color: change-color($black, $lightness: 100%);
+    font-size: 1.9rem;
+    font-weight: 400;
+  }
+}
+
+// Message styles
+.message {
+  border-radius: 5px;
+  line-height: 1.55;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 15px 10px;
+}
+
+.info-message {
+  background: change-color($info-pink, $lightness: 95%);
+  border: 1px solid change-color($info-pink, $lightness: 90%);
+  color: $info-pink;
+}
+
+noscript .info-message {
+  left: 50%;
+  margin: 0 auto;
+  min-width: 280px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@import "main";
