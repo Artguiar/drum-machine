@@ -18,7 +18,7 @@ Inspired by the [Build a Drum Machine challenge](https://learn.freecodecamp.org/
 
 ## Demo
 
-View project demo at .
+View project demo at . https://artguiar.github.io/drum-machine/
 
 ## Instructions
 
